@@ -1,0 +1,568 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a {
+    color: #11999E;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
+    margin: 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #66BFBF;
+    padding: 20px;
+}
+
+h1 {
+    color: #66BFBF;
+    font: 5rem 'Sacramento', cursive;
+    margin: 50px 0 0;
+    text-align: center;
+    }
+
+h2 {
+    color: #66BFBF;
+    font: 1.75rem 'Montserrat', sans-serif;
+    margin: 35px 0;
+}
+
+h3 {
+    color: #11999E;
+    font: 1rem 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #EAF6F6;
+    margin: 0;
+    padding-top: 50px;
+    position: relative;
+}
+
+hr {
+    border: 7px #EAF6F6;
+    border-style: dotted none none none;
+    margin: 75px auto;
+    width: 60px;
+}
+
+p {
+    color: #40514E;
+}
+
+
+/******************************************  HEADER  ***********************************/
+
+#subheader {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+#top-cloud {
+    position: absolute;
+    left: calc(50% + 350px);
+    top: 70px;
+    width: 180px;
+}
+
+#bottom-cloud {
+    position: absolute;
+    bottom: 300px;
+    right: calc(50% + 350px);
+    width: 180px;
+}
+
+#mountain {
+    vertical-align: bottom;
+    width: 800px;
+}
+
+#balloon {
+    animation-name: up;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    bottom: 150px;
+    left: calc(50% + 80px);
+    position: absolute;
+    width: 110px;
+}
+
+@keyframes up {
+    from {bottom: 0px;}
+    to {bottom: 150px;}
+}
+
+
+/******************************************  /HEADER  ***********************************/
+
+
+/*******************************************  MAIN  *************************************/
+
+main > div:nth-child(even) {
+    background-color: #F3EFE0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#profile {
+    margin: 0 auto;
+    max-width: 690px;
+    padding: 70px 25px 0;
+}
+
+#hobbies,
+#lorem,
+#ipsum {
+    margin: 0 auto;
+    max-width: 820px;
+    padding: 0 25px 40px;
+    text-align: justify;
+}
+
+#contact {
+    margin: 0 auto;
+    max-width: 650px;
+    padding: 0 25px 40px;
+}
+
+.circle,
+#hobbies img {
+    width: 170px;
+}
+
+.line {
+    border: 1px #727878;
+    border-style: inset none none none;
+    margin: 40px 0;
+    opacity: 0.2;
+    width: 100%;
+}
+
+.quote {
+    text-align: center;
+    font: 200 1.6rem 'Montserrat', sans-serif;
+}
+
+
+/*****************  HOBBIES  ******************/
+
+#hobbies > article {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#hobbies h3 {
+    text-align: left;
+}
+
+#hobbies p {
+    text-align: justify;
+}
+
+#hobbies > article:nth-of-type(odd) > img {
+    float: left;
+    margin-right: 35px;
+}
+
+#hobbies > article:nth-of-type(even) > img {
+    float: right;
+    margin-left: 35px;
+}
+
+/*****************  /HOBBIES  ******************/
+
+
+/*****************  PROJECTS  ******************/
+
+#projects {
+    margin: 70px auto 20px;
+    max-width: 700px;
+    padding: 0 25px 20px;
+    /* text-align: left; */
+}
+
+#wrapper-projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+#wrapper-projects img {
+    height: 160px;
+    margin: 20px;
+    opacity: 0.74;
+    padding: 20px;
+    width: 160px;
+}
+
+#wrapper-projects img:hover {
+    padding: 0;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/*****************  /PROJECTS  ******************/
+
+
+/*****************  SKILLS  ******************/
+
+#skills {
+    margin: 0 auto;
+    max-width: 800px;
+    padding-top: 40px;
+    text-align: justify;
+}
+
+#skills > h2 {
+    text-align: center;
+}
+
+#wrapper-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+tr td:nth-child(1) {
+    color: #40514E;
+    width: 160px;
+}
+
+tr td:nth-child(2) {
+    text-align: right;
+    color: #11999E;
+}
+
+/*****************  /SKILLS  ******************/
+
+
+/*****************  CONTACT  ******************/
+
+#btn-contact {
+    background: #61E1E1;
+    background-image: linear-gradient(to bottom, #61E1E1, #4BA5A5);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font: 18px 'Montserrat', sans-serif;
+    margin: 40px 0;
+    padding: 11px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#btn-contact:hover {
+    border: solid #337FED 0px;
+    background: #11CDD4;
+    background-image: linear-gradient(to bottom, #11CDD4, #11999E);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/*****************  CONTACT  ******************/
+
+
+/*******************************************  /MAIN  ****************************************/
+
+
+/*******************************************  FOOTER  ****************************************/
+
+.social-icon {
+    display: inline-block;
+    margin: 20px 20px;
+    opacity: 0.6;
+    width: 40px;
+}
+
+.social-icon:hover {
+    filter: invert(1);
+}
+
+/*******************************************  /FOOTER  *****************************************/
+
+
+/*******************************************  MEDIA QUERIES  ************************************/
+
+@media (max-width: 800px) {
+    #mountain {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #mobile-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    #hobbies > article:nth-of-type(odd):hover > img {
+        transform: rotate(20deg);
+    }
+    
+    #hobbies > article:nth-of-type(even):hover > img {
+        transform: rotate(-20deg);
+    }
+
+    /******* Desktop NAV *******/
+
+    #desktop-nav {
+        position: fixed;
+        top: 8%;
+        right: 0;
+        padding: 100px 49px 100px 70px;
+        border-bottom-left-radius: 35%;
+        border-top-left-radius: 35%;
+    }
+    
+    ul {
+        background-color: #40514EAD;
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        width: 130px;
+        border-radius: 5px;
+    }
+    
+    li a {
+        color: whitesmoke;
+        display: block;
+        padding: 25px;
+        text-decoration: none;
+    }
+    
+    #desktop-nav > ul {
+        visibility: hidden;
+    }
+    
+    #desktop-nav:hover > ul {
+        visibility: visible;
+    }
+
+    #nav-pointer {
+        visibility: visible;
+        padding: 0;
+        margin: 0;
+    }
+
+    #nav-pointer > a {
+        padding: 0;
+    }
+
+    /******* /Desktop NAV *******/
+
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    
+    /******** Desktop NAV *****/
+
+    #desktop-nav {
+        position: fixed;
+        top: 8%;
+        right: 1px;
+    }
+    
+    ul {
+        background-color: #40514EAD;
+        list-style-type: none;
+        margin-right: 20px;
+        padding: 0;
+        text-align: center;
+        width: 85px;
+        border-radius: 5px;
+    }
+    
+    li a {
+        color: whitesmoke;
+        display: block;
+        padding: 25px 0;
+        text-decoration: none;
+    }
+
+    #nav-pointer {
+        display: none;
+    }
+
+    /******** /Desktop NAV *****/
+}
+
+@media (max-width: 1023px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    /******* Mobile NAV *******/
+
+    #mobile-nav {
+        position: relative;
+        display: block;
+    }
+    
+    #menu-btn {
+        background-color: hsl(169, 12%, 50%);
+        color: whitesmoke;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    #menu {
+        display: none;
+        position: absolute;
+        background-color: #40514E;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px #00000033;
+    }
+    
+    #menu > a {
+        color: whitesmoke;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+    
+    #menu > a:hover {
+        background-color: #66BFBF;
+    }
+    
+    #mobile-nav:hover > #menu {
+        display: block;
+    }
+    
+    #mobile-nav:hover > #menu-btn {
+        background-color: #40514E;
+    }
+
+    /******* /Mobile NAV *******/
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    #top-cloud {
+        left: auto;
+        position: absolute;
+        right: 60px;  
+        top: 280px;
+    }
+
+    #bottom-cloud {
+        bottom: 220px;
+        left: 80px;
+        position: absolute;
+        right: auto;
+    }
+} 
+
+@media (max-width: 767px) {
+    #top-cloud {
+        display: none;
+    }
+
+    #bottom-cloud {
+        display: none;
+        bottom: 220px;
+        left: 80px;
+        position: absolute;
+        right: auto;
+    }
+    
+    #balloon {
+        display: none;
+        bottom: 10%;
+        position: absolute;
+        right: 100px;
+        width: 70px;
+    }
+
+    /* used to be .float-left */
+    #hobbies > article:nth-of-type(odd) > img {
+        float: none;
+        margin: 0 auto;
+        padding: 25px 0 15px;
+        width: 180px;
+    }
+
+    /* used to be .float-right */    
+    #hobbies > article:nth-of-type(even) > img {
+        float: none;
+        margin: 0 auto;
+        padding: 25px 0 15px;
+        width: 180px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+} 
+
+
+/*******************************************  /MEDIA QUERIES  ************************************/
+
+
+/*******************************************  NAV  ************************************/
+
+#desktop-nav li > a:hover {
+    background-color: #66BFBF;
+}
+
+#desktop-nav li:last-child > a:hover {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#desktop-nav li:first-child > a:hover {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; 
+}
+
+#arrow {
+    animation: arrow 1.65s ease 5;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    opacity: 0.7;
+    padding-top: 5px;
+}
+
+@keyframes arrow {
+    0% {bottom: 0px;}
+    50% {bottom: -11px;}
+    100% {bottom: 0px;}
+}
+
+
+/*******************************************  /NAV  ************************************/
+
+
+/*******************************************  Notas  ************************************/
+
+/* 
+
+Right now, taking the code out of the media query for screen widths GTE 1200px will produce undesired 
+behaivior with the navbar, this is because the way I used media queries without focusing on either mobile
+first or desktop first. Not exactly the best practice.
+
+Basically, later make the proper adjustments so that that media query is not neccesary,
+
+ */
+
+/*******************************************  /Notas  ************************************/

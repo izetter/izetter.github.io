@@ -178,7 +178,6 @@ main > div:nth-child(even) {
 	margin: 70px auto 20px;
 	max-width: 700px;
 	padding: 0 25px 20px;
-	/* text-align: left; */
 }
 
 #wrapper-projects {
@@ -188,22 +187,22 @@ main > div:nth-child(even) {
 	justify-content: space-around;
 }
 
-#wrapper-projects > div {
+#wrapper-projects div {
 	display: flex;
 	flex-direction: column;
 }
 
 #wrapper-projects img {
 	height: 160px;
-	margin: 20px;
-	opacity: 0.74;
+	margin: 50px 20px 0px;
+	opacity: 0.8;
 	padding: 20px;
 	width: 160px;
 }
 
 #wrapper-projects img:hover {
 	cursor: pointer;
-	opacity: 0.9;
+	opacity: 1;
 	padding: 0;
 }
 

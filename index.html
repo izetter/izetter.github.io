@@ -4,6 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Isay Zetter">
+	<meta name="description" content="Isay Zetter's portfolio">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" sizes="16x16" href="images/favicon-16x16.png">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:200,500|Sacramento&display=block" rel="stylesheet">
@@ -24,7 +26,6 @@
 		<button id="menu-btn">menu</button>
 		<div id="menu">
 			<a href="#">Profile</a>
-			<a href="#bookmark-lorem">Lorem</a>
 			<a href="#projects">Projetcs</a>
 			<a href="#bookmark-skills">Skills</a>
 			<a href="#contact">Contact</a>
@@ -35,7 +36,6 @@
 		<ul>
 			<li id="nav-pointer"><a><img id="arrow" src="images/Arrow-down.svg"></a></li>
 			<li><a href="#">Profile</a></li>
-			<li><a href="#bookmark-lorem">Lorem</a></li>
 			<li><a href="#projects">Projects</a></li>
 			<li><a href="#bookmark-skills">Skills</a></li>
 			<li><a href="#contact">Contact</a></li>
@@ -178,10 +178,11 @@
 		<div>
 			<section id="contact">
 				<h2>Get in touch</h2>
+				<p>Find me on <a href="https://www.linkedin.com/in/isay-zetter/">LinkedIn</a> or send me an email:</p>
 				<form action="https://formsubmit.co/zetter.contact@gmail.com" method="POST">
-					<label>Name<input type="text" name="name" placeholder="Your name..." required></label>
-					<label>Email<input type="email" name="email" placeholder="Your email..." required></label>
-					<label>Message<textarea name="story"></textarea></label>
+					<label>Name<input type="text" name="name" placeholder="Your name" required></label>
+					<label>Email<input type="email" name="email" placeholder="Your email" required></label>
+					<label>Message<textarea name="message" placeholder="Your message..." required></textarea></label>
 					<input type="submit" value="Submit">
 			   </form>
 

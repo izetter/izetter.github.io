@@ -143,19 +143,6 @@ main > div:nth-child(even) {
 	width: 170px;
 }
 
-.line {
-	border: 1px #727878;
-	border-style: inset none none none;
-	margin: 40px 0;
-	opacity: 0.2;
-	width: 100%;
-}
-
-.quote {
-	font: 200 1.6rem 'Montserrat', sans-serif;
-	text-align: center;
-}
-
 
 /*****************  HOBBIES  ******************/
 
@@ -201,6 +188,11 @@ main > div:nth-child(even) {
 	justify-content: space-around;
 }
 
+#wrapper-projects > div {
+	display: flex;
+	flex-direction: column;
+}
+
 #wrapper-projects img {
 	height: 160px;
 	margin: 20px;
@@ -216,38 +208,6 @@ main > div:nth-child(even) {
 }
 
 /*****************  /PROJECTS  ******************/
-
-
-/*****************  SKILLS  ******************/
-
-#skills {
-	margin: 0 auto;
-	max-width: 800px;
-	padding-top: 40px;
-	text-align: justify;
-}
-
-#skills > h2 {
-	text-align: center;
-}
-
-#wrapper-skills {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-}
-
-tr td:nth-child(1) {
-	color: #40514E;
-	width: 160px;
-}
-
-tr td:nth-child(2) {
-	color: #11999E;
-	text-align: right;
-}
-
-/*****************  /SKILLS  ******************/
 
 
 /*****************  CONTACT  ******************/

@@ -27,7 +27,7 @@ footer {
 
 h1 {
 	color: #66BFBF;
-	font: 5rem 'Sacramento', cursive;
+	font: 4rem 'Sacramento', cursive;
 	margin: 50px 0 0;
 	text-align: center;
 }
@@ -123,12 +123,11 @@ main > div:nth-child(even) {
 
 section {
 	margin: 6rem auto 0rem;
-	max-width: 820px;
+	max-width: 650px;
 	padding: 0 25px 40px;
 }
 
 #profile {
-	max-width: 690px;
 	padding: 70px 25px 0;
 }
 
@@ -139,10 +138,7 @@ section {
 
 #hobbies {
 	text-align: justify;
-}
-
-#contact {
-	max-width: 650px;
+	max-width: 820px;
 }
 
 .circle,
@@ -490,10 +486,6 @@ input[type=submit]:hover {
 		margin: 0 auto;
 		padding: 25px 0 15px;
 		width: 180px;
-	}
-
-	h1 {
-		font-size: 4rem;
 	}
 } 
 

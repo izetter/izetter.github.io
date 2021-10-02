@@ -23,6 +23,8 @@ body {
 footer {
 	background-color: #66BFBF;
 	padding: 20px;
+	padding-bottom: 1px;
+	padding-top: 15px;
 }
 
 h1 {
@@ -128,7 +130,7 @@ section {
 }
 
 #profile {
-	padding: 70px 25px 0;
+	padding: 0px 25px 0;
 }
 
 #projects {
@@ -170,6 +172,10 @@ section {
 #hobbies > article:nth-of-type(even) > img {
 	float: right;
 	margin-left: 35px;
+}
+
+#hobbies > article:last-child {
+	margin-bottom: 50px;
 }
 
 /*****************  /HOBBIES  ******************/
@@ -263,13 +269,17 @@ input[type=submit]:hover {
 
 .social-icon {
 	display: inline-block;
-	margin: 20px 20px;
+	margin: 20px 25px 15px;
 	opacity: 0.6;
 	width: 40px;
 }
 
 .social-icon:hover {
 	filter: invert(1);
+}
+
+#copyright {
+	margin: 0;
 }
 
 /*******************************************  /FOOTER  *****************************************/

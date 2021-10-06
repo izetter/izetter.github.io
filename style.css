@@ -29,7 +29,7 @@ footer {
 
 h1 {
 	color: #66BFBF;
-	font: 4rem 'Sacramento', cursive;
+	font: 3.5rem 'Sacramento', cursive;
 	margin: 50px 0 0;
 	text-align: center;
 }
@@ -71,40 +71,6 @@ p {
 	font-size: 1.4rem;
 	font-weight: 500;
 	margin-bottom: 50px;
-}
-
-#top-cloud {
-	left: calc(50% + 350px);
-	position: absolute;
-	top: 70px;
-	width: 180px;
-}
-
-#bottom-cloud {
-	bottom: 300px;
-	position: absolute;
-	right: calc(50% + 350px);
-	width: 180px;
-}
-
-#mountain {
-	vertical-align: bottom;
-	width: 800px;
-}
-
-#balloon {
-	animation-duration: 5s;
-	animation-name: up;
-	animation-timing-function: ease-out;
-	bottom: 150px;
-	left: calc(50% + 80px);
-	position: absolute;
-	width: 110px;
-}
-
-@keyframes up {
-	from {bottom: 0px;}
-	to {bottom: 150px;}
 }
 
 
@@ -287,12 +253,6 @@ input[type=submit]:hover {
 
 /*******************************************  MEDIA QUERIES  ************************************/
 
-@media (max-width: 800px) {
-	#mountain {
-		width: 100%;
-	}
-}
-
 @media (min-width: 1024px) {
 	#mobile-nav {
 		display: none;
@@ -445,42 +405,7 @@ input[type=submit]:hover {
 
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-	#top-cloud {
-		left: auto;
-		position: absolute;
-		right: 60px;  
-		top: 280px;
-	}
-
-	#bottom-cloud {
-		bottom: 220px;
-		left: 80px;
-		position: absolute;
-		right: auto;
-	}
-} 
-
 @media (max-width: 767px) {
-	#top-cloud {
-		display: none;
-	}
-
-	#bottom-cloud {
-		bottom: 220px;
-		display: none;
-		left: 80px;
-		position: absolute;
-		right: auto;
-	}
-	
-	#balloon {
-		bottom: 10%;
-		display: none;
-		position: absolute;
-		right: 100px;
-		width: 70px;
-	}
 
 	/* used to be .float-left */
 	#hobbies > article:nth-of-type(odd) > img {
@@ -526,12 +451,6 @@ input[type=submit]:hover {
 	padding-top: 5px;
 	position: relative;
 	width: 80px;
-}
-
-@keyframes arrow {
-	0% {bottom: 0px;}
-	50% {bottom: -11px;}
-	100% {bottom: 0px;}
 }
 
 

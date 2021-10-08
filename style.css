@@ -22,6 +22,7 @@ body {
 
 h1 {
 	color: #66BFBF;
+	color: hsl(0, 0%, 93%);
 	font: 3.5rem 'Sacramento', cursive;
 	margin: 50px 0 0;
 	text-align: center;
@@ -37,19 +38,6 @@ h3 {
 	color: #11999E;
 	font: 1rem 'Montserrat', sans-serif;
 	margin: 0;
-}
-
-header {
-	margin: 0;
-	padding-top: 50px;
-	position: relative;
-}
-
-hr {
-	border: 7px #EAF6F6;
-	border-style: dotted none none none;
-	margin: 75px auto;
-	width: 60px;
 }
 
 p {
@@ -87,7 +75,7 @@ section {
 }
 
 #projects {
-	margin: 70px auto 0;
+	margin: 7px auto 0;
 	max-width: 700px;
 	padding-bottom: 0;
 }
@@ -480,24 +468,33 @@ footer {
 	margin-bottom: -110px;
 }
 
+.header-waves {
+	background-image: url('./images/layered-waves-top.svg');
+	margin-bottom: -150px;
+
+}
 
 div#about {
 	background-color: #F3EFE0;
 }
 
+header {
+	margin: 0;
+	padding-top: 50px;
+	position: relative;
+	background-color: #E84855;
+}
 
+.head {
+	margin: 0;
+	padding: 0;
+}
 
+header p {
+	margin-bottom: 0;
+	color: hsl(0, 0%, 93%);
+}
 
-
-/* 
-Condier inverting colors so projects are in beige and hobbies in white.
-Either case, put waves between projects and the welcome section.
-
-Maybe projects in white and welcome in blue/green/other contrasting color,
-Header with narrower and maybe less waves and/or a color transition
-
-The morphing blob could go around the welcome section's text and photo.
-
-Make the footer less prominent.
-
-*/
+header h2 {
+	color: hsl(0, 0%, 93%);
+} 

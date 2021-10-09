@@ -61,7 +61,7 @@ p {
 
 main > div:first-child {
 	margin-bottom: 5rem;
-	/* background-color: #EAF6F6; */
+	/* background-color: #F3EFE0; */
 }
 
 section {
@@ -469,9 +469,8 @@ footer {
 }
 
 .header-waves {
-	background-image: url('./images/layered-waves-top.svg');
+	background-image: url('./images/layered-waves-turquoise.svg');
 	margin-bottom: -150px;
-
 }
 
 div#about {
@@ -482,7 +481,7 @@ header {
 	margin: 0;
 	padding-top: 50px;
 	position: relative;
-	background-color: #E84855;
+	background-color: #25c9cc;
 }
 
 .head {
@@ -499,4 +498,12 @@ header h2 {
 	color: hsl(0, 0%, 93%);
 } 
 
-/* testing */
+.circle {
+	filter: grayscale(0.4) sepia(0) brightness(1.25);
+	/* width: 10rem; */
+}
+
+/* 
+Maybe still add lighter red in some other section/part
+
+*/

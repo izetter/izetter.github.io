@@ -20,15 +20,6 @@ body {
 	text-align: center;
 }
 
-h1 {
-	color: #66BFBF;
-	color: hsl(0, 0%, 93%);
-	font: 3.5rem 'Pacifico', cursive;
-	/* font: 3.5rem  cursive; */
-	margin: 40px 0 0;
-	text-align: center;
-}
-
 h2 {
 	color: #66BFBF;
 	font: 2.55rem 'Pacifico', sans-serif;
@@ -49,11 +40,22 @@ p {
 
 /******************************************  HEADER  ***********************************/
 
-#subheader {
-	font-size: 1.4rem;
-	font-weight: 500;
-	margin-bottom: 50px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /******************************************  /HEADER  ***********************************/
@@ -84,6 +86,7 @@ section {
 .circle,
 #hobbies img {
 	width: 150px;
+
 }
 
 
@@ -215,10 +218,10 @@ input[type=submit]:hover {
 
 
 footer {
+	margin-top: 1rem;
 	padding: 20px;
 	padding-bottom: 1px;
 	padding-top: 15px;
-	margin-top: 1rem;
 }
 
 .social-icon {
@@ -233,11 +236,195 @@ footer {
 }
 
 #copyright {
-	margin: 0;
 	color: hsl(0, 0%, 65%);
+	margin: 0;
 }
 
 /*******************************************  /FOOTER  *****************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* WAVES */
+
+.spacer {
+	aspect-ratio: 960/300;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+.beige-top {
+	background-image: url('./images/layered-waves-beige-top.svg');
+	margin-top: -230px;
+}
+
+.beige-bottom {
+	background-image: url('./images/layered-waves-beige-bottom.svg');
+	margin-bottom: -150px;
+}
+
+.header-waves {
+	background-image: url('./images/layered-waves-turquoise.svg');
+	margin-bottom: -180px;
+}
+
+div#about {
+	background-color: #F3EFE0;
+}
+
+header {
+	background-color: #25c9cc;
+	margin: 0;
+	position: relative;
+}
+
+h1 {
+	color: #66BFBF;
+	color: hsl(0, 0%, 93%);
+	font: 3.5rem 'Pacifico', cursive;
+	margin: 40px 0 0;
+	text-align: center;
+}
+
+
+#subheader {
+	color: hsl(0, 0%, 93%);
+	font: 1.4rem 'Montserrat', sans-serif;
+	margin-bottom: 2.4rem;
+	margin-top: 1.4rem;
+} 
+
+
+.circle {
+	filter: grayscale(0.25) brightness(1.15);
+	margin-top: 2.5rem;
+	width: 9rem;
+}
+
+header p {
+	color: whitesmoke;
+	font-size: 1.1rem;
+	margin-bottom: 0;
+}
+
+
+#header-links-container {
+	display: flex;
+	justify-content: left;
+}
+
+.header-link {
+	color: gainsboro;
+	font: 1.35rem 'Montserrat', sans-serif;
+	margin-left: 2rem;
+	margin-top: 1.5rem;
+	text-decoration: none;
+}
+
+.header-link:hover {
+	color: lightslategray;
+}
+
+
+#projects {
+	margin: 7px auto 0;
+	max-width: 730px;
+	padding-bottom: 0;
+}
+
+#wrapper-projects {
+	align-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#wrapper-projects div {
+	color: hsl(0, 0%, 40%);
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+}
+
+#wrapper-projects a {
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper-projects img {
+	filter: drop-shadow(2px 3px 5px hsl(0, 0%, 75%));
+	height: 120px;
+	margin: 50px 20px 0px;
+	opacity: 0.8;
+	padding: 10px;
+	width: 120px;
+}
+
+#wrapper-projects img:hover {
+	cursor: pointer;
+	opacity: 1;
+	padding: 0;
+}
+
+section#profile {
+	max-width: 530px;
+}
+
+input,
+textarea {
+	color: hsl(0, 0%, 25%);
+}
+
+#contact section {
+	padding-bottom: 0;
+}
+
+#hobbies p {
+	font-size: 1rem;
+	line-height: 1.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*******************************************  MEDIA QUERIES  ************************************/
@@ -345,6 +532,18 @@ footer {
 		display: none;
 	}
 
+	header {
+		padding-bottom: 50px;
+	}
+
+	h1 {
+		margin-top: 100px;
+	}
+
+	.header-waves {
+		margin-bottom: -120px;
+	}
+
 	/******* Mobile NAV *******/
 
 	#mobile-nav {
@@ -395,6 +594,37 @@ footer {
 }
 
 @media (max-width: 767px) {
+
+	.header-link {
+		display: none;
+	}
+
+	.header-waves {
+		margin-bottom: -70px;
+	}
+
+	h1 {
+		margin-top: 50px;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+
+	.circle {
+		margin-bottom: 2rem;
+		margin-top: 1.8rem;
+	}
+
+	.beige-top {
+		margin-top: -100px;
+	}
+
+	#hobbies {
+		text-align: center;
+	}
+	
+	.beige-bottom {
+		margin-bottom: -50px;
+	}
 
 	/* used to be .float-left */
 	#hobbies > article:nth-of-type(odd) > img {
@@ -451,145 +681,3 @@ footer {
 
 /*******************************************  /NAV  ************************************/
 
-
-/* WAVES */
-
-.spacer {
-	aspect-ratio: 960/300;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-}
-
-.beige-top {
-	background-image: url('./images/layered-waves-beige-top.svg');
-	margin-top: -230px;
-}
-
-.beige-bottom {
-	background-image: url('./images/layered-waves-beige-bottom.svg');
-	margin-bottom: -150px;
-}
-
-.header-waves {
-	background-image: url('./images/layered-waves-turquoise.svg');
-	margin-bottom: -180px;
-}
-
-div#about {
-	background-color: #F3EFE0;
-}
-
-header {
-	background-color: #25c9cc;
-	margin: 0;
-	position: relative;
-}
-
-.head {
-	margin: 0;
-	padding: 0;
-}
-
-header p {
-	color: whitesmoke;
-	font-size: 1.1rem;
-	margin-bottom: 0;
-}
-
-header h2 {
-	color: hsl(0, 0%, 93%);
-	font: 1.75rem 'Montserrat', sans-serif;
-} 
-
-.circle {
-	filter: grayscale(0.25) brightness(1.15);
-	width: 9rem;
-}
-
-
-#header-links-container {
-	display: flex;
-	justify-content: left;
-}
-
-.header-link {
-	color: gainsboro;
-	font: 1.35rem 'Montserrat', sans-serif;
-	margin-left: 2rem;
-	margin-top: 1.5rem;
-	text-decoration: none;
-}
-
-.header-link:hover {
-	color: lightslategray;
-}
-
-
-#projects {
-	margin: 7px auto 0;
-	max-width: 730px;
-	padding-bottom: 0;
-}
-
-#wrapper-projects {
-	align-content: space-between;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-
-#wrapper-projects div {
-	color: hsl(0, 0%, 40%);
-	display: flex;
-	flex-direction: column;
-	margin: 1rem;
-}
-
-#wrapper-projects a {
-	margin: 0;
-	padding: 0;
-}
-
-#wrapper-projects img {
-	filter: drop-shadow(2px 3px 5px hsl(0, 0%, 75%));
-	height: 120px;
-	margin: 50px 20px 0px;
-	opacity: 0.8;
-	padding: 10px;
-	width: 120px;
-}
-
-#wrapper-projects img:hover {
-	cursor: pointer;
-	opacity: 1;
-	padding: 0;
-}
-
-section#profile {
-	max-width: 530px;
-}
-
-input,
-textarea {
-	color: hsl(0, 0%, 25%);
-}
-
-#contact section {
-	padding-bottom: 0;
-}
-
-#hobbies p {
-	font-size: 1rem;
-	line-height: 1.9;
-}
-
-
-
-/* 
-Maybe still add lighter red in some other section/part
-
-contact input text maybe lighter
-
-*/

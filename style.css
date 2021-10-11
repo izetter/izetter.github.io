@@ -395,10 +395,15 @@ footer {
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
+
+	.beige-top {
+		margin-top: -170px;
+	}
 	
 	/******** Desktop NAV *****/
 
 	#desktop-nav {
+		display: none;
 		position: fixed;
 		right: 1px;
 		top: 8%;
@@ -443,6 +448,10 @@ footer {
 
 	.header-waves {
 		margin-bottom: -120px;
+	}
+
+	.beige-top {
+		margin-top: -150px;
 	}
 
 	/******* Mobile NAV *******/
@@ -493,7 +502,7 @@ footer {
 	/******* /Mobile NAV *******/
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
 	.header-link {
 		display: none;

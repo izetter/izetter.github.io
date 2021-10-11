@@ -641,6 +641,10 @@ textarea {
 		padding: 25px 0 15px;
 		width: 180px;
 	}
+
+	#copyright {
+		font-size: 0.7rem;
+	}
 } 
 
 

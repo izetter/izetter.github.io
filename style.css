@@ -23,8 +23,9 @@ body {
 h1 {
 	color: #66BFBF;
 	color: hsl(0, 0%, 93%);
-	font: 3.5rem 'Sacramento', cursive;
-	margin: 50px 0 0;
+	font: 3.5rem 'Pacifico', cursive;
+	/* font: 3.5rem  cursive; */
+	margin: 40px 0 0;
 	text-align: center;
 }
 
@@ -122,32 +123,43 @@ section {
 
 /*****************  PROJECTS  ******************/
 
-#wrapper-projects {
-	align-content: space-between;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
 
-#wrapper-projects div {
-	color: gray;
-	display: flex;
-	flex-direction: column;
-}
 
-#wrapper-projects img {
-	height: 160px;
-	margin: 50px 20px 0px;
-	opacity: 0.8;
-	padding: 10px;
-	width: 140px;
-}
 
-#wrapper-projects img:hover {
-	cursor: pointer;
-	opacity: 1;
-	padding: 0;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*****************  /PROJECTS  ******************/
 
@@ -478,10 +490,9 @@ div#about {
 }
 
 header {
-	margin: 0;
-	padding-top: 50px;
-	position: relative;
 	background-color: #25c9cc;
+	margin: 0;
+	position: relative;
 }
 
 .head {
@@ -490,8 +501,9 @@ header {
 }
 
 header p {
+	color: whitesmoke;
+	font-size: 1.1rem;
 	margin-bottom: 0;
-	color: hsl(0, 0%, 93%);
 }
 
 header h2 {
@@ -499,11 +511,73 @@ header h2 {
 } 
 
 .circle {
-	filter: grayscale(0.4) sepia(0) brightness(1.25);
-	/* width: 10rem; */
+	border-radius: 50vw;
+	filter: grayscale(0.25) brightness(1.15);
+	/* filter: grayscale(1); */
+	width: 9rem;
 }
+
+
+#header-links-container {
+	display: flex;
+	justify-content: left;
+}
+
+.header-link {
+	color: gainsboro;
+	font: 1.35rem 'Montserrat', sans-serif;
+	margin-left: 2rem;
+	margin-top: 1.5rem;
+	text-decoration: none;
+}
+
+.header-link:hover {
+	color: lightslategray;
+}
+
+
+#wrapper-projects {
+	align-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#wrapper-projects div {
+	display: flex;
+	flex-direction: column;
+}
+
+#wrapper-projects img {
+	filter: drop-shadow(2px 3px 5px hsl(0, 0%, 75%));
+}
+
+#wrapper-projects img {
+	height: 160px;
+	margin: 50px 20px 0px;
+	opacity: 0.8;
+	padding: 10px;
+	width: 140px;
+}
+
+#wrapper-projects img:hover {
+	cursor: pointer;
+	opacity: 1;
+	padding: 0;
+}
+
+
+section#profile {
+	max-width: 530px;
+}
+
+
+
+
 
 /* 
 Maybe still add lighter red in some other section/part
+
+contact input text maybe lighter
 
 */

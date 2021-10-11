@@ -75,12 +75,6 @@ section {
 	padding: 0px 25px 0;
 }
 
-#projects {
-	margin: 7px auto 0;
-	max-width: 700px;
-	padding-bottom: 0;
-}
-
 #hobbies {
 	max-width: 820px;
 	text-align: justify;
@@ -478,6 +472,7 @@ footer {
 .beige-bottom {
 	background-image: url('./images/layered-waves-beige-bottom.svg');
 	margin-bottom: -110px;
+
 }
 
 .header-waves {
@@ -536,6 +531,12 @@ header h2 {
 }
 
 
+#projects {
+	margin: 7px auto 0;
+	max-width: 630px;
+	padding-bottom: 0;
+}
+
 #wrapper-projects {
 	align-content: space-between;
 	display: flex;
@@ -548,16 +549,19 @@ header h2 {
 	flex-direction: column;
 }
 
-#wrapper-projects img {
-	filter: drop-shadow(2px 3px 5px hsl(0, 0%, 75%));
+#wrapper-projects a {
+	margin: 0;
+	padding: 0;
 }
 
 #wrapper-projects img {
-	height: 160px;
+	filter: drop-shadow(2px 3px 5px hsl(0, 0%, 75%));
+	height: 120px;
 	margin: 50px 20px 0px;
 	opacity: 0.8;
 	padding: 10px;
-	width: 140px;
+	width: 115px;
+
 }
 
 #wrapper-projects img:hover {

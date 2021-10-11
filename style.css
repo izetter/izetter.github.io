@@ -31,7 +31,7 @@ h1 {
 
 h2 {
 	color: #66BFBF;
-	font: 1.75rem 'Montserrat', sans-serif;
+	font: 2.55rem 'Pacifico', sans-serif;
 	margin: 35px 0;
 }
 
@@ -201,7 +201,8 @@ textarea {
 }
 
 input[type=submit]:hover {
-	background-color: hsl(180, 68%, 45%);
+	background-color: #25c9cc;
+
 }
 
 /*****************  CONTACT  ******************/
@@ -465,19 +466,17 @@ footer {
 
 .beige-top {
 	background-image: url('./images/layered-waves-beige-top.svg');
-	/* background-image: url('./images/layered-waves-beige-blue-top.svg'); */
-	margin-top: -180px;
+	margin-top: -230px;
 }
 
 .beige-bottom {
 	background-image: url('./images/layered-waves-beige-bottom.svg');
-	margin-bottom: -110px;
-
+	margin-bottom: -150px;
 }
 
 .header-waves {
 	background-image: url('./images/layered-waves-turquoise.svg');
-	margin-bottom: -150px;
+	margin-bottom: -180px;
 }
 
 div#about {
@@ -503,6 +502,7 @@ header p {
 
 header h2 {
 	color: hsl(0, 0%, 93%);
+	font: 1.75rem 'Montserrat', sans-serif;
 } 
 
 .circle {
@@ -533,7 +533,7 @@ header h2 {
 
 #projects {
 	margin: 7px auto 0;
-	max-width: 630px;
+	max-width: 730px;
 	padding-bottom: 0;
 }
 
@@ -545,8 +545,10 @@ header h2 {
 }
 
 #wrapper-projects div {
+	color: hsl(0, 0%, 40%);
 	display: flex;
 	flex-direction: column;
+	margin: 1rem;
 }
 
 #wrapper-projects a {
@@ -560,8 +562,7 @@ header h2 {
 	margin: 50px 20px 0px;
 	opacity: 0.8;
 	padding: 10px;
-	width: 115px;
-
+	width: 120px;
 }
 
 #wrapper-projects img:hover {
@@ -570,11 +571,14 @@ header h2 {
 	padding: 0;
 }
 
-
 section#profile {
 	max-width: 530px;
 }
 
+input,
+textarea {
+	color: hsl(0, 0%, 25%);
+}
 
 
 

@@ -33,6 +33,7 @@ h2 {
 	color: #66BFBF;
 	font: 2.55rem 'Pacifico', sans-serif;
 	margin: 35px 0;
+	/* filter: drop-shadow(0.5px 0.5px 1px hsl(0, 0%, 75%)); */
 }
 
 h3 {
@@ -82,7 +83,7 @@ section {
 
 .circle,
 #hobbies img {
-	width: 170px;
+	width: 150px;
 }
 
 
@@ -213,30 +214,27 @@ input[type=submit]:hover {
 /*******************************************  FOOTER  ****************************************/
 
 
-/* EAF6F6 */
-/* 66BFBF */
-/* 11999E */
-
 footer {
-	background-color: #66BFBF;
 	padding: 20px;
 	padding-bottom: 1px;
 	padding-top: 15px;
+	margin-top: 1rem;
 }
 
 .social-icon {
 	display: inline-block;
 	margin: 20px 25px 15px;
-	opacity: 0.6;
+	opacity: 0.45;
 	width: 40px;
 }
 
 .social-icon:hover {
-	filter: invert(1);
+	opacity: 0.8;
 }
 
 #copyright {
 	margin: 0;
+	color: hsl(0, 0%, 65%);
 }
 
 /*******************************************  /FOOTER  *****************************************/
@@ -506,9 +504,7 @@ header h2 {
 } 
 
 .circle {
-	border-radius: 50vw;
 	filter: grayscale(0.25) brightness(1.15);
-	/* filter: grayscale(1); */
 	width: 9rem;
 }
 
@@ -580,6 +576,14 @@ textarea {
 	color: hsl(0, 0%, 25%);
 }
 
+#contact section {
+	padding-bottom: 0;
+}
+
+#hobbies p {
+	font-size: 1rem;
+	line-height: 1.9;
+}
 
 
 
